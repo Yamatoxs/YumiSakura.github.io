@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid transparent;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #000;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+header ul li a:hover ,
+header ul li a.active
+
+{
+    background: #eb7495;
+    color: #ffffff
+}
+
+.voltar {
+    position: relative;
+    top: -200px;
+    left: -40px;
+    margin-top: 20px;
+}
+
+.botao-voltar {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #eb7495;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.botao-voltar:hover {
+    background-color: #d752b1;
+    transform: scale(1.1);
+}
+
+.seta {
+    margin-right: 5px;
+}
+
+.aviso {
+    background-color: rgba(235, 116, 149, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+}
+
+.aviso h2 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+    animation: changeColor 10s linear infinite alternate, changeShadowColor 10s linear infinite alternate;
+    text-shadow: 2px 2px 4px rgba(128, 0, 0, 0.5);
+}
+
+@keyframes changeColor {
+    0% {
+        color: rgb(128, 0, 0);
+    }
+    25% {
+        color: rgb(0, 128, 0);
+    }
+    50% {
+        color: rgb(0, 0, 128);
+    }
+    75% {
+        color: rgb(128, 0, 128);
+    }
+}
+
+@keyframes changeShadowColor {
+    0% {
+        text-shadow: 2px 2px 4px rgba(128, 0, 0, 0.5);
+    }
+    25% {
+        text-shadow: 2px 2px 4px rgba(0, 128, 0, 0.5);
+    }
+    50% {
+        text-shadow: 2px 2px 4px rgba(0, 0, 128, 0.5);
+    }
+    75% {
+        text-shadow: 2px 2px 4px rgba(128, 0, 128, 0.5);
+    }
+}
+
+.aviso span {
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(128, 0, 0, 0.5);
+}
+
+.aviso p {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.aviso p:last-child {
+    margin-bottom: 0;
+}
+
+footer {
+    background: linear-gradient(to right, #eb7495, #d752b1);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}

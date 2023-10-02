@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Pagina Inicial.css" media="screen" />
+    <link rel="icon" href="logo.png" type="image/png">
+    <title>Yumi | Pagina inicial</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#" class="active">Início</a></li>
+                <li><a href="Cursos.html">Cursos</a></li>
+                <li><a href="#">O que tem de novo?</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="TextBox">
+                <h2>Isto é Japonês,<br>Isto é <span>Sakura</span></h2>
+                <p>Embarque em uma jornada única com Yumi Sakura e mergulhe no fascinante mundo do japonês. Aprenda a língua e explore a rica cultura nipônica com nosso toque especial de Sakura.</p>
+                <a href="Ler mais.html">Ler Mais</a>
+            </div>
+            <div class="imgBox">
+                <img src="Cherry.png" class="Sakuras">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="Cherry.png" onclick="imgSlider('Cherry.png');changeCircleColor('#eb7495')"</li>
+            <li><img src="Cherry2.png" onclick="imgSlider('Cherry2.png');changeCircleColor('#d752b1')"</li>
+            <li><img src="Cherry3.png" onclick="imgSlider('Cherry3.png');changeCircleColor('#ebB6C1')"</li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://cdn.discordapp.com/attachments/1152625634024108155/1152724164839477389/f1a3927d-7cff-4ece-9ac2-1a754a5a7a92.jpg?ex=6519ea89&is=65189909&hm=d832337508a7401a38fd6171b53a43e02e25bb9e694318e196ed12fa7598c720&" target="_blank"><img src="Pix.png"></a></li>
+            <li><a href="https://discord.gg/XHMxMFRbcD" target="_blank"><img src="discord.png"></a></li>
+            <li><a href="https://instagram.com/augusto.xxz_/" target="_blank"><img src="instagram.png"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.Sakuras').src = anything;
+    }
+
+    function changeCircleColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.backgroundColor = color;
+    }
+    </script>
+    <footer>
+        <p>&copy; 2023 Yumi Sakura. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

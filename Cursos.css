@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid transparent;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #000;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+header ul li a:hover ,
+header ul li a.active
+
+{
+    background: #eb7495;
+    color: #ffffff
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.card img {
+    max-width: 200px;
+    height: auto;
+}
+
+.card-container {
+    cursor: pointer;
+}
+
+.card-container.expand-on-hover .card {
+    border-radius: 30px;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-container.expand-on-hover:hover .card {
+    transform: scale(1.05); /* Aumenta o tamanho do card ao passar o mouse */
+    box-shadow: 0px 8px 16px rgb(242, 120, 144, 0.5);
+}
+
+.card-container a {
+    text-decoration: none;
+}
+
+.content {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #888;
+}
+
+/* Estilos do subtítulo */
+.subtitle {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.subtitle p {
+    font-size: 0.8rem; /* Tamanho do texto em minúsculo */
+    margin-right: 5px;
+    color: #888;
+}
+
+.subtitle img {
+    max-width: 24px; /* Tamanho da imagem */
+    height: auto;
+}
+
+.content h2 span {
+    color: #eb7495;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.bandeira-do-japao {
+    position: absolute;
+    width: 27%;
+    top: 160px;
+    left: 120px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: linear-gradient(to right, #eb7495, #d752b1);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
