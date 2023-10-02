@@ -82,7 +82,7 @@ header ul li a.active
     color: #eb7495;
     font-size: 1.2em;
     font-weight: 900;
-    text-shadow: 2px 2px 4px rgba(255, 210, 231, 0.9), -2px -2px 4px rgba(255, 210, 231, 0.9), 2px -2px 4px rgba(255, 210, 231, 0.9), -2px 2px 4px rgba(255, 210, 231, 0.9);;
+    text-shadow: 2px 2px 4px rgba(255, 210, 231, 0.9), -2px -2px 4px rgba(255, 210, 231, 0.9), 2px -2px 4px rgba(255, 210, 231, 0.9), -2px 2px 4px rgba(255, 210, 231, 0.9);
 }
 
 .content .TextBox p {
