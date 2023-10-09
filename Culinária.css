@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Quicksand:wght@300&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #000;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+header ul li a:hover ,
+header ul li a.active
+
+{
+    background: #eb7495;
+    color: #ffffff
+}
+
+.voltar {
+    margin-right: 20px;
+    margin-left: 100px;
+}
+
+.botao-voltar {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #eb7495;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.botao-voltar:hover {
+    background-color: #d752b1;
+    transform: scale(1.1);
+}
+
+.seta {
+    margin-right: 5px;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.TituloK {
+    flex-grow: 1;
+    margin-left: 100px;
+    margin-top: -50px;
+}
+
+.TituloK h2 {
+    font-family: 'Oswald';
+    font-size: 55px;
+    margin-top: 30px;
+}
+
+.TituloK p {
+    font-family: 'Roboto', bold;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.Postagem {
+    flex-grow: 1;
+    margin-left: 100px;
+}
+
+.Postagem h3 {
+    font-family: 'Quicksand';
+    font-size: 18px;
+}
+
+.imagem-ao-lado {
+    width: 450px;
+    height: auto;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 65px;
+    margin-top: -30px;
+}
+
+.imagemabaixo {
+    width: 450px;
+    height: auto;
+    border-radius: 50px;
+}
+
+.Linha1 {
+    border-bottom: 1px solid rgb(0, 0, 0, 0,0   );
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+}
+
+.Linha2 {
+    border-bottom: 1px solid rgb(0, 0, 0);
+    width: 85%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+}
+
+iframe {
+    border-radius: 20px; /* Define o raio de borda para tornar as bordas redondas */
+}
+
+
+footer {
+    background: linear-gradient(to right, #eb7495, #d752b1);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
