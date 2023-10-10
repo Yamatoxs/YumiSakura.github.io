@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+header {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #000;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+header ul li a:hover ,
+header ul li a.active
+
+{
+    background: #eb7495;
+    color: #ffffff
+}
+
+.voltar {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.botao-voltar {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #eb7495;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.botao-voltar:hover {
+    background-color: #d752b1;
+    transform: scale(1.1);
+}
+
+.seta {
+    margin-right: 5px;
+}
+
+.Textos {
+    position: relative;
+    margin-top: 170px;
+    margin-left: 380px;
+}
+
+.Texto-Principal {
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.3em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.SubTexto {
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1.5rem;
+    font-weight: 8000;
+    line-height: 1.3em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.Shape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #eb7495;
+    border-radius: 1.5rem;
+    background: rgba(235, 116, 149, 0.5);
+    padding: 1rem;
+    max-width: 10000px; /* Defina a largura máxima desejada */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.Shape a {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.card {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    margin-bottom: 70px;
+}
+
+.card img {
+    max-width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+    margin-right: 20px; /* Espaçamento entre a imagem e o conteúdo de texto */
+}
+
+.card-content {
+    flex-grow: 1; /* Permite que o conteúdo de texto ocupe todo o espaço restante */
+}
+
+.card:last-child {
+    margin-bottom: 0;
+}
+
+.titulo-atividade {
+    font-size: 1rem; /* Tamanho da fonte para o título */
+    margin-bottom: 5px; /* Espaçamento inferior entre título e descrição */
+}
+
+.descricao-atividade {
+    font-size: 0.9rem; /* Tamanho da fonte para a descrição */
+    margin-bottom: 10px; /* Espaçamento inferior entre descrição e link "Saiba mais" */
+}
+
+.card {
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.card:hover {
+    cursor: pointer;
+    background-color: rgba(235, 116, 149, 0.3);
+}
+
+footer {
+    background: linear-gradient(to right, #eb7495, #d752b1);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
