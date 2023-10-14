@@ -155,6 +155,12 @@ iframe {
     border-radius: 20px; /* Define o raio de borda para tornar as bordas redondas */
 }
 
+.highlight {
+    background-color: pink;
+    font-weight: bold;
+    font-size: 17px;
+}
+
 
 footer {
     background: linear-gradient(to right, #eb7495, #d752b1);
